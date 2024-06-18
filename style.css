@@ -1,0 +1,128 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Variáveis de texto */
+    --text-color-primary: #313131;
+    --text-color-secondary: #6C6C6C;
+    --brand-color: #EF5F4C;
+
+    /* Cores da página */
+    --surface-color: #F5F5F5;
+
+    /* Fontes */
+    --font-family: "Poppins", sans-serif;
+    --text-lg: bold 32px/125% var(--font-family);
+    --text: bold 16px/150% var(--font-family);
+    --text-md: bold 14px/170% var(--font-family);
+    --text-sm: bold 12px/170% var(--font-family);
+}
+
+body {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-style: normal;
+    /* padding: 0px 32px; */
+}
+
+/* .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+} */
+
+header {
+    background-color: var(--surface-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 32px;
+}
+
+header span:hover {
+    color: var(--brand-color);
+}
+
+.nav-itens {
+    color: var(--text-color-secondary);
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+#search-icon {
+    width: 32px;
+}
+
+.nav-itens spam:hover {
+    color: #EF5F4C;
+}
+
+#search-icon:hover {
+    color: #EF5F4C;
+    text-decoration: underline;
+}
+
+#small-pic {
+    width: 40px;
+}
+
+.about {
+    background-color: var(--surface-color);
+    padding: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    width: 592px;
+    gap: 32px;
+}
+
+main h2 {
+    font: var(--text-lg);
+    color: var(--text-color-primary);
+    font-size: 32;
+}
+
+p {
+    font: var(--text-md);
+    color: var(--text-color-secondary);
+}
+
+.info {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.photo-gallery {
+    display: flex;
+    padding: 24px 32px;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.photo {
+    width: 286px;
+}
+
+footer {
+    font: var(--text-md);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 32px;
+    position: fixed;
+    bottom: 0px;
+    background-color: #fff;
+    width: 100%;
+}
